@@ -1,0 +1,10 @@
+measure,paper_original,replication,note
+UQC en prueba,2.0011 (DE 0.23),1.3686,Artículo: promedio entre modelos de folds. Réplica: un par final reentrenado.
+UQC de selección aleatoria,1.0000,1.0000,"Referencia de la definición usada, no porcentaje de conversión."
+"Ganancia acumulada normalizada al 20%, en p.p.",aprox. 0.410,0.240,G(0.2)/N_T. No es la tasa de conversión del segmento seleccionado.
+"Ganancia acumulada normalizada al 100%, en p.p.",aprox. 0.370,0.370,La diferencia de tasas con todos los datos no depende del ranking.
+AUUC relativa sobre deciles,No reportada para TM en tabla 5,0.0025250,"Área de g(q) con g redondeado a 4 decimales, sin restar diagonal."
+Área Qini por encima de la diagonal,No reportada para TM en tabla 5,0.0006750,Área de g(q) menos q*g(1). No es el Qini normalizado por el óptimo.
+n_estimators,100,200,Selección en entrenamiento. El modelo evaluado no se reajusta.
+max_depth,25,25,Selección en entrenamiento. El modelo evaluado no se reajusta.
+min_samples_leaf,30,50,Selección en entrenamiento. El modelo evaluado no se reajusta.

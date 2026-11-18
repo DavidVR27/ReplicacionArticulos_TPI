@@ -1,0 +1,144 @@
+{
+  "experiment": "Hillstrom Conversion: Womens E-Mail vs No E-Mail",
+  "input_path": "C:\\Users\\davo2\\OneDrive\\Documentos\\Desktop\\Ulima\\Cursos\\26-2\\Tesis\\Replicacion\\data\\hillstrom-email\\hillstrom.csv",
+  "input_sha256_before": "0e5893329d8b93cefecc571777672028290ab69865718020c78c7284f291aece",
+  "reference_path": "C:\\Users\\davo2\\OneDrive\\Documentos\\Desktop\\Ulima\\Cursos\\26-2\\Tesis\\Replicacion\\original-paper\\autoum-intmar\\src\\preparation\\hillstrom.py",
+  "reference_sha256": "b9cae7de77802644dc54929e084bad37fc69f9857a1ddb32bfc2da24d4bf23e5",
+  "reference_parameters": {
+    "only_women": true,
+    "only_men": false,
+    "visit_T": false
+  },
+  "environment": {
+    "python": "3.10.11",
+    "pandas": "2.3.2"
+  },
+  "rows_original": 64000,
+  "original_group_counts": {
+    "Womens E-Mail": 21387,
+    "Mens E-Mail": 21307,
+    "No E-Mail": 21306
+  },
+  "rows_excluded_mens_email": 21307,
+  "rows_selected_before_deduplication": 42693,
+  "raw_duplicate_rows_selected_keep_first": 4438,
+  "rows_removed_after_transformation": 4769,
+  "rows_prepared": 37924,
+  "duplicates_remaining": 0,
+  "missing_values_original": {
+    "recency": 0,
+    "history_segment": 0,
+    "history": 0,
+    "mens": 0,
+    "womens": 0,
+    "zip_code": 0,
+    "newbie": 0,
+    "channel": 0,
+    "segment": 0,
+    "visit": 0,
+    "conversion": 0,
+    "spend": 0
+  },
+  "before_deduplication": {
+    "control": {
+      "treatment": 0,
+      "rows": 21306,
+      "conversions": 122,
+      "conversion_rate": 0.005726086548390125
+    },
+    "correo_femenino": {
+      "treatment": 1,
+      "rows": 21387,
+      "conversions": 189,
+      "conversion_rate": 0.008837144059475383
+    }
+  },
+  "after_deduplication": {
+    "control": {
+      "treatment": 0,
+      "rows": 18926,
+      "conversions": 122,
+      "conversion_rate": 0.006446158723449224
+    },
+    "correo_femenino": {
+      "treatment": 1,
+      "rows": 18998,
+      "conversions": 187,
+      "conversion_rate": 0.009843141383303505
+    }
+  },
+  "category_mappings": {
+    "history_segment": {
+      "1) $0 - $100": 0,
+      "2) $100 - $200": 1,
+      "3) $200 - $350": 2,
+      "4) $350 - $500": 3,
+      "5) $500 - $750": 4,
+      "6) $750 - $1,000": 5,
+      "7) $1,000 +": 6
+    },
+    "zip_code": {
+      "Rural": 0,
+      "Surburban": 1,
+      "Urban": 2
+    },
+    "channel": {
+      "Multichannel": 0,
+      "Phone": 1,
+      "Web": 2
+    }
+  },
+  "features": [
+    "recency",
+    "history_segment",
+    "history",
+    "mens",
+    "womens",
+    "zip_code",
+    "newbie",
+    "channel"
+  ],
+  "prepared_columns": [
+    "recency",
+    "history_segment",
+    "history",
+    "mens",
+    "womens",
+    "zip_code",
+    "newbie",
+    "channel",
+    "treatment",
+    "response"
+  ],
+  "duplicate_key": [
+    "recency",
+    "history_segment",
+    "history",
+    "mens",
+    "womens",
+    "zip_code",
+    "newbie",
+    "channel",
+    "treatment",
+    "response"
+  ],
+  "duplicate_keep": "first",
+  "duplicate_audit_row_numbering": "Fila lógica del CSV original, encabezado = fila 1; primer registro = fila 2.",
+  "deduplication_limitation": "No hay identificador de cliente; filas iguales pueden representar personas diferentes. Se replica la decisión del código original.",
+  "encoding_method": "Categorías ordenadas lexicográficamente y codificadas de 0 a k-1, equivalente a la referencia para estas columnas sin faltantes.",
+  "resampling_performed": false,
+  "predictors_count": 8,
+  "paper_reported_counts": {
+    "control": 18926,
+    "correo_femenino": 18998
+  },
+  "paper_counts_match": true,
+  "outputs": {
+    "prepared_csv": "C:\\Users\\davo2\\OneDrive\\Documentos\\Desktop\\Ulima\\Cursos\\26-2\\Tesis\\Replicacion\\data\\hillstrom-email\\processed\\Hillstrom_Email_w_conversion.csv",
+    "removed_rows_csv": "C:\\Users\\davo2\\OneDrive\\Documentos\\Desktop\\Ulima\\Cursos\\26-2\\Tesis\\Replicacion\\data\\hillstrom-email\\processed\\Hillstrom_Email_w_conversion_duplicados.csv",
+    "audit_json": "C:\\Users\\davo2\\OneDrive\\Documentos\\Desktop\\Ulima\\Cursos\\26-2\\Tesis\\Replicacion\\data\\hillstrom-email\\processed\\Hillstrom_Email_w_conversion_auditoria.json"
+  },
+  "prepared_sha256": "f817371dbdc848b757265691b0cb20e17ec52fd191c39ad3c08fab43d063411b",
+  "input_sha256_after": "0e5893329d8b93cefecc571777672028290ab69865718020c78c7284f291aece",
+  "original_unchanged": true
+}

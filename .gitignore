@@ -1,0 +1,26 @@
+# Presentaciones: no publicar ningún PowerPoint.
+*.[pP][pP][tT]*
+*.[pP][pP][sS]*
+*.[pP][oO][tT]*
+
+# Entornos, cachés y respaldos locales.
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+src/notebooks/backups/
+*.log
+*.tmp
+~$*
+Thumbs.db
+.DS_Store
+.env
+.env.*
+
+# Código externo: descargar por separado, sin anidar repositorios.
+original-paper/
+
+# Este piloto utiliza Hillstrom. Otros datasets locales no forman parte de él.
+data/*
+!data/hillstrom-email/

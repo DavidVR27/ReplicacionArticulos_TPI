@@ -1,0 +1,19 @@
+{
+  "test_prediction_rows": 7585,
+  "curve_points_checked": 11,
+  "comparison_rows": 9,
+  "prior_training_model_data_predictions_and_reports_unchanged": true,
+  "primary_curve_and_uqc_verified_against_original_formulas_using_stable_ranks": true,
+  "legacy_response_tie_diagnostic_same_curve_and_uqc_in_this_test": true,
+  "previous_notebook_cells_preserved": true,
+  "all_notebook_code_cells_syntax_checked": true,
+  "new_evaluation_loading_cell_executed_using_python_not_jupyter": true,
+  "curve_png_visually_reviewed": true,
+  "artifact_sha256": {
+    "paper_comparison.csv": "6e059df0b9a728e5b5da788143441a3af80add107d9aea819f3a5e7093c57305",
+    "paper_comparison.md": "bbe31df4ddff709e59dfd021761a7cde44e84645b8066fa08d91104670d09d20",
+    "test_decile_curve.csv": "e5423d219a821e03ac35027c269b77f0155d12f00eda243f322fd312913dabc3",
+    "test_metrics.json": "fa1276ea77ccabcde8b548fcd1aa2381236bfdf46ad9bb373a3b065ad4c60dfc",
+    "test_qini_curve.png": "bd4c648d1c4e77f38404795872b68aefa778c0aae31493dcc4bb2782eebd584b"
+  }
+}

@@ -1,0 +1,3 @@
+# Dependencias directas de esta etapa. Reutiliza el entorno del proyecto.
+-r requirements-split.txt
+joblib==1.3.2

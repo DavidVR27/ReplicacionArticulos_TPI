@@ -1,0 +1,16 @@
+{
+  "effective_parameter_differences": {
+    "max_features": {
+      "original_environment": "auto",
+      "modern_environment": "sqrt"
+    }
+  },
+  "modern_runtime_still_intact": {
+    "python": "3.11.0",
+    "numpy": "1.24.3",
+    "pandas": "2.0.1"
+  },
+  "prior_artifacts_unchanged": true,
+  "notebook_prior_cells_preserved": true,
+  "audit_script_sha256": "1967d234a14990c016f974f62dfdcc0a8ad92bc2ec72245dfb1a3b76255b89bc"
+}

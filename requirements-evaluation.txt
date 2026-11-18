@@ -1,0 +1,3 @@
+# Dependencias directas de la evaluación y su figura.
+-r requirements-training.txt
+matplotlib==3.8.0

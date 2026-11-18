@@ -1,0 +1,93 @@
+{
+  "input": "C:\\Users\\davo2\\OneDrive\\Documentos\\Desktop\\Ulima\\Cursos\\26-2\\Tesis\\Replicacion\\data\\hillstrom-email\\processed\\Hillstrom_Email_w_conversion.csv",
+  "input_sha256": "f817371dbdc848b757265691b0cb20e17ec52fd191c39ad3c08fab43d063411b",
+  "parameters": {
+    "test_size": 0.2,
+    "random_state": 123,
+    "shuffle": true,
+    "stratify": [
+      "response",
+      "treatment"
+    ]
+  },
+  "environment": {
+    "python": "3.11.0",
+    "pandas": "2.0.1",
+    "numpy": "1.24.3",
+    "scikit_learn": "1.3.2"
+  },
+  "total_rows": 37924,
+  "train": {
+    "rows": 30339,
+    "conversions": 247,
+    "conversion_rate": 0.008141336233890371,
+    "treated": 15198
+  },
+  "test": {
+    "rows": 7585,
+    "conversions": 62,
+    "conversion_rate": 0.008174027686222808,
+    "treated": 3800
+  },
+  "strata": [
+    {
+      "response": 0,
+      "treatment": 0,
+      "total": 18804,
+      "train": 15043,
+      "test": 3761
+    },
+    {
+      "response": 0,
+      "treatment": 1,
+      "total": 18811,
+      "train": 15049,
+      "test": 3762
+    },
+    {
+      "response": 1,
+      "treatment": 0,
+      "total": 122,
+      "train": 98,
+      "test": 24
+    },
+    {
+      "response": 1,
+      "treatment": 1,
+      "total": 187,
+      "train": 149,
+      "test": 38
+    }
+  ],
+  "features": [
+    "recency",
+    "history_segment",
+    "history",
+    "mens",
+    "womens",
+    "zip_code",
+    "newbie",
+    "channel"
+  ],
+  "no_index_overlap": true,
+  "complete_coverage": true,
+  "input_unchanged": true,
+  "reference": "original-paper/autoum-intmar/src/pipelines/helper/helper_pipeline.py: HelperPipeline.get_dataframe",
+  "outputs": {
+    "train": "C:\\Users\\davo2\\OneDrive\\Documentos\\Desktop\\Ulima\\Cursos\\26-2\\Tesis\\Replicacion\\data\\hillstrom-email\\processed\\splits\\train.csv",
+    "test": "C:\\Users\\davo2\\OneDrive\\Documentos\\Desktop\\Ulima\\Cursos\\26-2\\Tesis\\Replicacion\\data\\hillstrom-email\\processed\\splits\\test.csv",
+    "assignments": "C:\\Users\\davo2\\OneDrive\\Documentos\\Desktop\\Ulima\\Cursos\\26-2\\Tesis\\Replicacion\\data\\hillstrom-email\\processed\\splits\\partition_assignments.csv",
+    "audit": "C:\\Users\\davo2\\OneDrive\\Documentos\\Desktop\\Ulima\\Cursos\\26-2\\Tesis\\Replicacion\\data\\hillstrom-email\\processed\\splits\\split_audit.json"
+  },
+  "output_sha256": {
+    "train": "0b319eec351facc410de8b0fb35a540695373f09bf66fc987f8210a093edf013",
+    "test": "872c072d1ed635d1388460292d1be33a9b5d43af060c59e91610a7b6b7babcc5",
+    "assignments": "21a03de0708eb7606ce738a3f24b39cbe5559c1b4faadf18b01ca360c47478e0"
+  },
+  "notes": [
+    "No se ajustaron modelos ni se hizo selección de hiperparámetros.",
+    "La validación cruzada se realizará solo dentro del conjunto de entrenamiento.",
+    "Los identificadores de trazabilidad no forman parte de las matrices predictoras.",
+    "La ausencia de solapamiento es por filas preparadas; el dataset no contiene identificador individual de cliente."
+  ]
+}

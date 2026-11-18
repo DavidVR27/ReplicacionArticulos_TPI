@@ -1,0 +1,25 @@
+{
+  "all_previous_artifacts_unchanged": true,
+  "all_eleven_model_pairs_reloaded_in_training_script": true,
+  "ten_fold_mean_checked": true,
+  "fold_test_prediction_rows_checked": 75850,
+  "notebook_previous_cells_preserved": true,
+  "new_notebook_loading_cell_checked_with_python": true,
+  "artifact_sha256": {
+    "comparison.csv": "d512c3236df39c2dd580d5f0fe363e8a6956e67ea258edc9e40caee4fbed7c2e",
+    "comparison.md": "fec2ab194a00054956245a446bdbeef7d9fcced82bd6e9de32358468f476fd51",
+    "comparison_qini.png": "86e864392faa555dc03c3bd720faa8c0661990443a166511d0747dad1b918cfe",
+    "experiment_protocol.json": "4d170cceb7361f0453051dac4481c293015ca87a855ff2c28dd6490a7aaa7d1e",
+    "experiment_report.json": "15388b73a42bde9ee3d073ffd7a30827949fc1459fd280d15cb40214d15631e9",
+    "final_test_curve.csv": "568c3e4a578d84379298f9dfbad4d30d73d70b262d863d4ddfdcc22a9f89b243",
+    "final_test_predictions.csv": "d4096249d81cf4c2b250a09f54c0f0f7a9787d9e30fa28f71dc5bd72a713d84f",
+    "fold_test_curves.csv": "5931d5eb3d12b318fde54d60a22b4217d3d8d671a651e66dc49d6fd216083614",
+    "fold_test_metrics.csv": "4dbff12af81301b51dd234f2cae40ab5e6463841997623ba61b8f3766bfc12fe",
+    "fold_test_predictions.csv": "4340e402e5749e7875ac6e0593fba303a8fd7dfbc77c7340b1c58bec2bc921d9",
+    "mean_fold_test_curve.csv": "268acafa8989f0a7c7c5eeb2ad545a270f5efd59e167efea73ca01a3ed70c73c",
+    "oof_predictions.csv": "c021531d7302c44715a00aa9af08996a2409ba01d55b5a1e7722d2e668d7d36e",
+    "two_model_paper_final.joblib": "42e3b2f3894f30e0dd8c415142f62851d32cab8d04812ed504ba40f77010bb39",
+    "two_model_paper_fold_models.joblib": "cc1de50407e3c550bd5014d318e089539f6422c0b7dfafc0fea1636d88ff0127",
+    "validation_metrics.csv": "5ecd3f54b71bb69a51fc97666ca7dcfa45c31b0d25f9237a93e66eb7e9d575fb"
+  }
+}

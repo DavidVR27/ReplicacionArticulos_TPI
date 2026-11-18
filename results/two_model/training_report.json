@@ -1,0 +1,75 @@
+{
+  "model": "Two-Model / T-Learner, two RandomForestClassifier",
+  "created_utc": "2026-11-18T00:54:46.086730+00:00",
+  "environment": {
+    "python": "3.11.0",
+    "numpy": "1.24.3",
+    "pandas": "2.0.1",
+    "sklearn": "1.3.2",
+    "joblib": "1.3.2"
+  },
+  "features": [
+    "recency",
+    "history_segment",
+    "history",
+    "mens",
+    "womens",
+    "zip_code",
+    "newbie",
+    "channel"
+  ],
+  "grid": {
+    "n_estimators": [
+      100,
+      200
+    ],
+    "max_depth": [
+      25,
+      50
+    ],
+    "min_samples_leaf": [
+      10,
+      30,
+      50,
+      70
+    ]
+  },
+  "candidates": 16,
+  "folds": 10,
+  "random_seed": 123,
+  "best_parameters": {
+    "max_depth": 25,
+    "min_samples_leaf": 50,
+    "n_estimators": 200
+  },
+  "mean_validation_uqc": 1.04416,
+  "selected_parameters_shared_by_both_models": true,
+  "train_rows": 30339,
+  "control_model_rows": 15141,
+  "treated_model_rows": 15198,
+  "training_positive_responses_control": 98,
+  "training_positive_responses_treated": 149,
+  "test_predictions_rows": 7585,
+  "test_used_for_selection": false,
+  "test_performance_evaluated": false,
+  "input_sha256": {
+    "train.csv": "0b319eec351facc410de8b0fb35a540695373f09bf66fc987f8210a093edf013",
+    "test.csv": "872c072d1ed635d1388460292d1be33a9b5d43af060c59e91610a7b6b7babcc5",
+    "partition_assignments.csv": "21a03de0708eb7606ce738a3f24b39cbe5559c1b4faadf18b01ca360c47478e0",
+    "split_audit.json": "5c50c3b86466df7419359b93d484c942b6254b5f8121d17395973ba54149b7e1"
+  },
+  "duration_seconds": 117.39241130000028,
+  "metric_definition": "Decile curves computed separately by treatment group; relative gains rounded to 4 decimals. UQC is area ratio to the random baseline; higher is better; random baseline = 1.",
+  "replication_adaptations": [
+    "max_features='sqrt' replaces legacy classifier 'auto' with the same meaning.",
+    "Stable score-only sorting replaces the reference score/response tie-breaker, preventing outcome-dependent rankings. Scores need not exactly reproduce the published table.",
+    "Parameter selection uses mean validation UQC; final pair refitted to all training rows.",
+    "CV is for hyperparameter selection; its winning score is not an unbiased final generalization estimate."
+  ],
+  "reference_files": [
+    "original-paper/autoum-intmar/src/approaches/two_model.py",
+    "original-paper/autoum-intmar/src/pipelines/pipeline_rw.py",
+    "original-paper/autoum-intmar/src/evaluation/evaluation.py"
+  ],
+  "model_file": "C:\\Users\\davo2\\OneDrive\\Documentos\\Desktop\\Ulima\\Cursos\\26-2\\Tesis\\Replicacion\\results\\two_model\\two_model.joblib"
+}

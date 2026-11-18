@@ -1,0 +1,12 @@
+{
+  "fixed_parameters": {
+    "n_estimators": 100,
+    "max_depth": 25,
+    "min_samples_leaf": 30
+  },
+  "source": "Rößler & Schoder (2022), table A1, TM / Hillstrom Conversion",
+  "primary_comparison": "mean of all ten fold-model test UQCs; no test-based fold selection",
+  "secondary_comparison": "single pair refitted on all training data",
+  "prior_test_results_already_seen": true,
+  "new_hyperparameter_search": false
+}
